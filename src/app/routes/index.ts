@@ -4,6 +4,7 @@ import { WorkRoutes } from '../modules/Work/work.routes'
 import { BlogRoutes } from '../modules/Blog/blog.routes'
 import { TeamRoutes } from '../modules/Team/team.routes'
 import { ClientRoutes } from '../modules/Client/client.routes'
+import { TechnologyRoutes } from '../modules/Technology/technology.routes'
 
 const router = Router()
 
@@ -27,6 +28,10 @@ const moduleRoutes = [
   {
     path: '/client',
     route: ClientRoutes,
+  },
+  {
+    path: '/technology',
+    route: TechnologyRoutes,
   },
 ]
 

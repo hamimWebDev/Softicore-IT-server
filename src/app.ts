@@ -16,8 +16,8 @@ app.use(cockieParser())
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://hamim-portfolio.vercel.app",
-    "https://next-js-portfolio-orcin-zeta.vercel.app"
+    "https://softicore-it-client.vercel.app",
+    "http://softicoreit.com"
   ], credentials: true
 }))
 

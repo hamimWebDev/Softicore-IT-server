@@ -16,12 +16,6 @@ const workSchema = new Schema<IWork>(
       type: String,
       required: true,
     },
-    frontend: {
-      type: String,
-    },
-    backend: {
-      type: String,
-    },
     liveLink: {
       type: String,
       required: true,
