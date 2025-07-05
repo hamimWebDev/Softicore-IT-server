@@ -18,7 +18,10 @@ router.post(
         'No cover image uploaded for the client',
       )
     }
-    req.body = JSON.parse(req.body.data)
+    req.body = {
+      ...JSON.parse(req.body.data),
+      image: req.file.path,
+    }
     next()
   },
   auth(USER_ROLE.admin),

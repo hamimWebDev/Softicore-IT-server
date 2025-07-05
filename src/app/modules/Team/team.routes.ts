@@ -17,7 +17,10 @@ router.post(
         'No image uploaded for the team member',
       )
     }
-    req.body = JSON.parse(req.body.data)
+    req.body = {
+      ...JSON.parse(req.body.data),
+      image: req.file.path,
+    }
     next()
   },
   auth(USER_ROLE.admin),
