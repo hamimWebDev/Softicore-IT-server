@@ -23,7 +23,8 @@ const userSchema = new Schema<IUser, UserModel>(
     },
     role: {
       type: String,
-      default: 'admin',
+      enum: ["admin"],
+      required: true,
     },
 
     needsPasswordChange: {
