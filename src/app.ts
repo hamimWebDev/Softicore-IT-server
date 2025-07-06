@@ -17,7 +17,7 @@ app.use(cors({
   origin: [
     "http://localhost:3000",
     "https://softicore-it-client.vercel.app",
-    "http://softicoreit.com"
+    "https://softicoreit.com"
   ], credentials: true
 }))
 
